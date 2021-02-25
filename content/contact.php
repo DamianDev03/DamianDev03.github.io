@@ -24,6 +24,8 @@
 	  <a href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a class="active" href="contact.php">Contact</a>
+
+
 	  <div class="login-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Username" name="username">
