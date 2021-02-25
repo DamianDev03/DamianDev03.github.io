@@ -21,7 +21,7 @@
 <div class="topnav">
 	  <a class="active" href="index.php">Home</a>
 	  <a href="content/overons.php">Over ons</a>
-	  <a href="contentabonnementen.php">Abonnementen</a>
+	  <a href="content/abonnementen.php">Abonnementen</a>
 	  <a href="content/contact.php">Contact</a>
 
     
