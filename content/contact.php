@@ -16,8 +16,57 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
-<?php 
 
+
+<body>
+
+
+	<div class="topnav">
+	  <a href="../index.php">Home</a>
+	  <a href="overons.php">Over ons</a>
+	  <a href="abonnementen.php">Abonnementen</a>
+	  <a class="active" href="contact.php">Contact</a>
+
+
+
+  </div>
+	</div>
+
+	<div id="container">
+	
+	<h3>Contact</h3>
+
+    <form action="contact.php" method="post">
+  <div class="elem-group">
+    <label for="name">Je naam</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Je E-mailadres</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div><br>
+  <div class="elem-group">
+    <label for="department-selection">Kies Betrokken afdeling</label>
+    <select id="department-selection" name="concerned_department" required>
+        <option value="">Selecteer een afdeling</option>
+        <option value="billing">Facturering</option>
+        <option value="marketing">Marketing</option>
+        <option value="technical support">Technische hulp</option>
+    </select>
+  </div>
+  <div class="elem-group">
+    <label for="title">
+    Reden om contact met ons op te nemen</label>
+    <input type="text" id="title" name="email_title" required placeholder="Kan mijn wachtwoord niet opnieuw instellen" pattern=[A-Za-z0-9\s]{8,60}>
+  </div>
+  <div class="elem-group">
+    <label for="message">Schrijf uw bericht</label>
+    <textarea id="message" name="visitor_message" placeholder="Schrijf iets..." required></textarea>
+  </div>
+  <button type="submit">Verzend bericht</button>
+</form>
+
+<?php
   
 
 if($_POST) {
@@ -85,72 +134,17 @@ if($_POST) {
     .'From: ' . $visitor_email . "\r\n";
       
     if(mail($recipient, $email_title, $email_body, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+        echo "<p>Bedankt dat je contact met ons hebt opgenomen, $visitor_name. U krijgt binnen 24 uur antwoord op uw bericht.</p>";
     } else {
         echo '<p>We are sorry but the email did not go through.</p>';
     }
       
 } else {
-    echo '<p>Something went wrong</p>';
+    echo '<br><p>Something went wrong</p>';
 }
 ?>
 
-
-<body>
-
-
-	<div class="topnav">
-	  <a href="../index.php">Home</a>
-	  <a href="overons.php">Over ons</a>
-	  <a href="abonnementen.php">Abonnementen</a>
-	  <a class="active" href="contact.php">Contact</a>
-
-
-
-	  <div class="login-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Username" name="username">
-      <input type="text" placeholder="Password" name="psw">
-      <button type="submit">Login</button>
-    </form>
-  </div>
-	</div>
-
-
-	<div id="container">
-	
-	<h3>Contact</h3>
-
-    <form action="contact.php" method="post">
-  <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-  </div>
-  <div class="elem-group">
-    <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-  </div><br>
-  <div class="elem-group">
-    <label for="department-selection">Choose Concerned Department</label>
-    <select id="department-selection" name="concerned_department" required>
-        <option value="">Select a Department</option>
-        <option value="billing">Billing</option>
-        <option value="marketing">Marketing</option>
-        <option value="technical support">Technical Support</option>
-    </select>
-  </div>
-  <div class="elem-group">
-    <label for="title">Reason For Contacting Us</label>
-    <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
-  </div>
-  <div class="elem-group">
-    <label for="message">Write your message</label>
-    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
-  </div>
-  <button type="submit">Send Message</button>
-</form>
-
 		
-	</div>
+</div>
 </body>
 </html>
