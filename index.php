@@ -145,7 +145,7 @@
     <div class="row">
       <div class="col-sm-12">
 
-        <h3 class="linkabo">Klik <a href="content/abonnementen.php">hier</a> om alle abonnementen te bekijken.</h3>
+        <h3 class="linkabo">Klik <a href="content/abonnementen.php">hier</a> om alle abonnement pakketten te bekijken.</h3>
       
       </div>
     </div>
