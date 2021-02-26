@@ -19,6 +19,7 @@
 <?php 
 
   
+
 if($_POST) {
     $visitor_name = "";
     $visitor_email = "";
@@ -65,16 +66,16 @@ if($_POST) {
     }
       
     if($concerned_department == "billing") {
-        $recipient = "damianhubert03@gmail.com";
+        $recipient = "damian@localhost.com";
     }
     else if($concerned_department == "marketing") {
-        $recipient = "damianhubert03@gmail.com";
+        $recipient = "damian@localhost.com";
     }
     else if($concerned_department == "technical support") {
-        $recipient = "damianhubert03@gmail.com";
+        $recipient = "damian@localhost.com";
     }
     else {
-        $recipient = "damianhubert03@gmail.com";
+        $recipient = "damian@localhost.com";
     }
       
     $email_body .= "</div>";
@@ -120,25 +121,34 @@ if($_POST) {
 	
 	<h3>Contact</h3>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="voornaam">Voornaam</label>
-    <input type="text" id="voornaam" name="voornaam" placeholder="Je voornaam..">
-
-    <label for="achternaam">Achternaam</label>
-    <input type="text" id="achternaam" name="achternaam" placeholder="Je achternaam..">
-
-	<label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Je emailadres..">
-
-
-    <label for="onderwerp">Onderwerp</label>
-    <textarea id="onderwerp" name="onderwerp" placeholder="Schrijf iets.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-		
+    <form action="contact.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div><br>
+  <div class="elem-group">
+    <label for="department-selection">Choose Concerned Department</label>
+    <select id="department-selection" name="concerned_department" required>
+        <option value="">Select a Department</option>
+        <option value="billing">Billing</option>
+        <option value="marketing">Marketing</option>
+        <option value="technical support">Technical Support</option>
+    </select>
+  </div>
+  <div class="elem-group">
+    <label for="title">Reason For Contacting Us</label>
+    <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+  </div>
+  <div class="elem-group">
+    <label for="message">Write your message</label>
+    <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+  </div>
+  <button type="submit">Send Message</button>
+</form>
 
 		
 	</div>
