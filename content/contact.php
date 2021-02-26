@@ -25,7 +25,7 @@
 	  <a href="../index.php">Home</a>
 	  <a href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
-	  <a class="active" href="contact.php">Contact</a>
+	  <a class="active" href="contact.php">Contact</a>  
 
 
 
@@ -35,7 +35,7 @@
 	<div id="container">
 	
 	<h3>Contact</h3>
-
+ 
     <form action="contact.php" method="post">
   <div class="elem-group">
     <label for="name">Je naam</label>
@@ -63,7 +63,7 @@
     <label for="message">Schrijf uw bericht</label>
     <textarea id="message" name="visitor_message" placeholder="Schrijf iets..." required></textarea>
   </div>
-  <button type="submit">Verzend bericht</button>
+  <button type="submit">Verzenden</button>
 </form>
 
 <?php
@@ -80,7 +80,7 @@ if($_POST) {
     if(isset($_POST['visitor_name'])) {
         $visitor_name = filter_var($_POST['visitor_name'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Visitor Name:</b></label>&nbsp;<span>".$visitor_name."</span>
+                           <label><b>Bezoeker Naam:</b></label>&nbsp;<span>".$visitor_name."</span>
                         </div>";
     }
  
@@ -88,28 +88,28 @@ if($_POST) {
         $visitor_email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['visitor_email']);
         $visitor_email = filter_var($visitor_email, FILTER_VALIDATE_EMAIL);
         $email_body .= "<div>
-                           <label><b>Visitor Email:</b></label>&nbsp;<span>".$visitor_email."</span>
+                           <label><b>Bezoeker Email:</b></label>&nbsp;<span>".$visitor_email."</span>
                         </div>";
     }
       
     if(isset($_POST['email_title'])) {
         $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Reason For Contacting Us:</b></label>&nbsp;<span>".$email_title."</span>
+                           <label><b>Reden om contact met ons op te nemen:</b></label>&nbsp;<span>".$email_title."</span>
                         </div>";
     }
       
     if(isset($_POST['concerned_department'])) {
         $concerned_department = filter_var($_POST['concerned_department'], FILTER_SANITIZE_STRING);
         $email_body .= "<div>
-                           <label><b>Concerned Department:</b></label>&nbsp;<span>".$concerned_department."</span>
+                           <label><b>Betrokken afdeling</b></label>&nbsp;<span>".$concerned_department."</span>
                         </div>";
     }
       
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
         $email_body .= "<div>
-                           <label><b>Visitor Message:</b></label>
+                           <label><b>Bezoeker Bericht:</b></label>
                            <div>".$visitor_message."</div>
                         </div>";
     }
@@ -136,11 +136,11 @@ if($_POST) {
     if(mail($recipient, $email_title, $email_body, $headers)) {
         echo "<p>Bedankt dat je contact met ons hebt opgenomen, $visitor_name. U krijgt binnen 24 uur antwoord op uw bericht.</p>";
     } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+        echo '<p>Het spijt ons, maar de e-mail is niet doorgekomen.</p>';
     }
       
 } else {
-    echo '<br><p>Something went wrong</p>';
+    echo '<br><p>Iets ging mis</p>';
 }
 ?>
 
