@@ -34,7 +34,7 @@
 
 	<div id="container">
 	
-	<h3>Contact</h3>
+	<h3 class="contact">Contact</h3>
 
     <form action="contact.php" method="post">
   <div class="elem-group">
