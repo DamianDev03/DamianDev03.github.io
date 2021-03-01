@@ -125,6 +125,10 @@ h3 {
 .tekst h3{
 	text-align: center;
 }
+
+#rij{
+	margin-top: 85px;
+}
 input[type=text], select, textarea {
 	width: 100%;
 	padding: 12px;
