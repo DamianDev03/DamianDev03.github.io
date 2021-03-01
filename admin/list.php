@@ -11,6 +11,9 @@
 	<th>bewerking</th>
 	</tr>
 <?php
+include("../admin/db_config.php");
+
+
 
 
 $sQuery = "SELECT * from abonementen"; 
@@ -25,7 +28,7 @@ $sQuery = "SELECT * from abonementen";
 	//resultaat:
 	while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
     {
-			$id = 		$aRow["ID"];
+			$id = 		$aRow["id"];
 			$name = 	$aRow["name"];
 			$prijs = $aRow["prijs"];
 			

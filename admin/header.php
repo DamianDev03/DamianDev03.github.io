@@ -8,10 +8,10 @@
 	<body>
 		<div id="Admin-Header">
 		
-			<p>Tele4 Admin</p>
+			<p>Tele4 Adminpage</p>
 			<ul>
 				<li>
-					<a href="index.php">Home</a>
+					<a href="index2.php">Home</a>
 				</li>
 				<li>
 					<a href="add.php">Abonement Toevoegen</a>
@@ -27,4 +27,4 @@
 		
 		</div>
 		<div id="content">
-		<?php include("db_config.php"); ?>
+		<?php include("../admin/db_config.php"); ?>

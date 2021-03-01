@@ -5,9 +5,9 @@
 <br>
 <?php 
 
-include("db_config.php");
+include("../admin/db_config.php");
 
-//Actie uitvoeren als er nog geen SUBMIT is gegeven:
+
 if (!isset($_POST["wijzigen"])) {
 	
 	$ID = $_GET["id"];
