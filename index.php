@@ -144,6 +144,14 @@
 
     <div class="row">
       <div class="col-sm-12">
+
+        <h3 class="linkabo">Klik <a href="content/abonnementen.php">hier</a> om alle abonnement pakketten te bekijken.</h3>
+      
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
         <div class="kopje">
           <h1><br>Informatie over Tele4</h1>
         </div>
