@@ -35,7 +35,6 @@
 	<div id="container">
 	
 
-	<h3>Contact</h3>
  
 
 	<h3 class="contact">Contact</h3>
