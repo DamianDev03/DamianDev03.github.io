@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<title>Admin</title>
-		<link rel="stylesheet" href="style/adminstyle.css">
+		<link rel="stylesheet" href="../css/adminstyle.css">
 	</head>
 	<body>
 		<div id="Admin-Header">
