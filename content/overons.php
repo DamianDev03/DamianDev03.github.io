@@ -19,11 +19,11 @@
 <body>
 	
 <div class="topnav">
-  <a  href="index.php">Home</a>
+  <a  href="../index.php">Home</a>
   <a class="active" href="overons.php">Over ons</a>
-  <a href="content/abonnementen.php">Abonnementen</a>
-  <a href="content/contact.php">Contact</a>
-  <a href= "content/cart.php"><i class="fa fa-shopping-cart"></i></a> 
+  <a href="abonnementen.php">Abonnementen</a>
+  <a href="contact.php">Contact</a>
+  <a href= "cart.php"><i class="fa fa-shopping-cart"></i></a> 
 
 </div>
 
