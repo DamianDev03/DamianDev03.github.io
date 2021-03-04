@@ -22,6 +22,8 @@
   <a href="content/overons.php">Over ons</a>
   <a href="content/abonnementen.php">Abonnementen</a>
   <a href="content/contact.php">Contact</a>
+  <a href="content/cart.php">Winkelwagen</a> 
+
 </div>
 
 <div class="row">
