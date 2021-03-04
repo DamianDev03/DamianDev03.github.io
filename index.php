@@ -75,7 +75,7 @@
         <div class=\"row\">
           <div class=\"col-sm-3\">
             <div class=\"abonnement\">
-              <div class=\"abovak\">
+              <div class=\"abovak_home\">
                 <div class=\"titel\">
                   <h3>$name</h3>
                 </div>
@@ -83,11 +83,11 @@
                   <img src=\"images/phones.png\" alt=\"3 telefoons\" width=\"300px\" height=\"300px\">
                 </div>
                 <div class=\"info\">
-                  <h4>$desc</h4>
-                  <h4>$prijs</h4>
+                  <h5>$desc</h5>
+                  <h5>$prijs</h5>
                 </div>
                 <div class=\"knop\">
-                  <a href=\"content/abonementinfo.php?id=$id\"><h4>Meer info</h4></a>
+                  <a href=\"content/abonementinfo.php?id=$id\"><h5>Meer info</h5></a>
                 </div>
               </div>
             </div>
