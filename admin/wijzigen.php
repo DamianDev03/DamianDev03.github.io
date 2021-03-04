@@ -21,7 +21,7 @@ if (!isset($_POST["wijzigen"])) {
 	while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
     {
 	
-	$ID=		$aRow["ID"];
+	$id=		$aRow["id"];
 	$name=		$aRow["name"];
 	$prijs=	$aRow["prijs"];
 	$description=		$aRow["description"];

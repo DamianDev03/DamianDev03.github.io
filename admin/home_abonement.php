@@ -19,7 +19,7 @@
 		//resultaat:
 		while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
 		{
-				$id = 		$aRow["ID"];
+				$id = 		$aRow["id"];
 				$name = 	$aRow["name"];
 				$prijs = $aRow["prijs"];
 				
