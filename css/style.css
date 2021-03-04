@@ -101,6 +101,14 @@ h3 {
 	margin-left: 80px;
 	background-color: rgb(204, 204, 204);
 }
+.abovak_home{
+	border: 0.5px solid black;
+	border-radius: 10px;
+	height: 500px;
+	width: 300px;
+	margin-left: 420px;
+	background-color: rgb(204, 204, 204);
+}
 .info{
 	text-align: center;
 	margin-top: 20px;
@@ -117,11 +125,11 @@ h3 {
 	text-align: center;
 	align-self: center;
 	background-color: rgb(63, 79, 226);
-	width: 150px;
-	height: 45px;
+	width: 100px;
+	height: 35px;
 	border: 1px solid black;
 	border-radius: 10px;
-	margin-left: 75px;
+	margin-left: 100px;
 }
 .tekst h3{
 	text-align: center;
@@ -154,7 +162,7 @@ input[type=text], select, textarea {
 	background-color: rgb(63, 79, 226);
   }
   
-  .container {
+  .footer {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
