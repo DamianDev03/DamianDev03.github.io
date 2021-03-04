@@ -13,6 +13,9 @@
 	<li>
 		<a href="home_abonement.php">Home Abonnement</a>
 	</li>
+	<li>
+		<a href="bestelingen.php">Bestelingen</a>
+	</li>
 </ul>
 
 <?php include("footer.php");?>

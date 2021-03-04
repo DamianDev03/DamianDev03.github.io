@@ -1,4 +1,4 @@
-<?php include("admin/db_config.php"); ?>
+<?php include("Admin/db_config.php"); ?>
 <!doctype html>
 <html>
 <head>
@@ -13,7 +13,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/style2.css" />
 </head>
 
 <body>
@@ -24,54 +23,50 @@
   <a href="content/abonnementen.php">Abonnementen</a>
   <a href="content/contact.php">Contact</a>
 </div>
+
+
 <?php
 
 
+	$sQuery = "SELECT 	home_abonement.id, 
+						home_abonement.ab_id, 
+						abonementen.ID, 
+						abonementen.name, 
+						abonementen.prijs, 
+						abonementen.description
+				
+				FROM home_abonement
+				INNER JOIN abonementen
+				ON home_abonement.ab_id = abonementen.ID;"; 
+		 
+		$oStmt = $db->prepare($sQuery); 
+		$oStmt->execute(); 
 
-$sQuery = "SELECT     home_abonement.id, 
-home_abonement.ab_id, 
-abonementen.id, 
-abonementen.name, 
-abonementen.prijs, 
-abonementen.description
+		$count = $oStmt->rowCount();
 
-FROM home_abonement
-INNER JOIN abonementen
-ON home_abonement.ab_id = abonementen.id;";
-   
-  $oStmt = $db->prepare($sQuery); 
-  $oStmt->execute(); 
-
-  $count = $oStmt->rowCount();
-
-
-  while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
-  {
-      $id =      $aRow["id"];
-      $name = 	$aRow["name"];
-      $prijs = $aRow["prijs"];
-      $desc = $aRow["description"];
-      
-      echo"
-      <div id=\"abboinforechts\">
-        <fieldset>
-          <legend><h1>$name</h1></legend>
-          <p class=\"info-description\">$desc</p>
-          <div class=\"abonement-link-home\">
-            <a href=\"abonementinfo.php?id=$id\">Bestel &euro;$prijs</a>
-          </div>
-        </fieldset>
-      </div>
-        
-      <div id=\"abbofotolinks\">
-        <h1>Abonnement foto</h1>
-      </div>
-      ";
-    
-    }
+		//resultaat:
+		while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
+		{
+				$id = 		$aRow["ID"];
+				$name = 	$aRow["name"];
+				$prijs = $aRow["prijs"];
+				$desc = $aRow["description"];
+				
+				echo"
+				<div id=\"abboinforechts\">
+					<fieldset>
+						<legend><h1>$name</h1></legend>
+						<p class=\"info-description\">$desc</p>
+						<div class=\"abonement-link-home\">
+							<a href=\"abonementinfo.php?id=$id\">Bestel &euro;$prijs</a>
+						</div>
+					</fieldset>
+				</div>
+				";
+			
+			}
 
 ?>
-
 
 <br><br>
 <div class="footer">

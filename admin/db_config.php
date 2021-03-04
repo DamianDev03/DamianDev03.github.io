@@ -2,7 +2,7 @@
 
 $db = array ( 
     'host' => 'localhost', 
-    'dbname' => 'televier', 
+    'dbname' => 'Tele4', 
     'user' => 'root', 
     'pass' => '' 
 ); 

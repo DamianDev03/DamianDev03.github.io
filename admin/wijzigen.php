@@ -5,9 +5,9 @@
 <br>
 <?php 
 
-include("../admin/db_config.php");
+include("db_config.php");
 
-
+//Actie uitvoeren als er nog geen SUBMIT is gegeven:
 if (!isset($_POST["wijzigen"])) {
 	
 	$ID = $_GET["id"];
@@ -21,7 +21,7 @@ if (!isset($_POST["wijzigen"])) {
 	while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
     {
 	
-	$id=		$aRow["id"];
+	$ID=		$aRow["ID"];
 	$name=		$aRow["name"];
 	$prijs=	$aRow["prijs"];
 	$description=		$aRow["description"];

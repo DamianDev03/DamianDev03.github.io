@@ -1,6 +1,7 @@
 <?php include("header.php");?>
 <?php
-include("../admin/db_config.php");
+
+include("db_config.php");
 	
 		$id = $_GET["item"];
 
