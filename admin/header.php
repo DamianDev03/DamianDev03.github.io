@@ -11,7 +11,7 @@
 			<p>Tele4 Admin</p>
 			<ul>
 				<li>
-					<a href="index.php">Home</a>
+					<a href="index2.php">Home</a>
 				</li>
 				<li>
 					<a href="add.php">Abonement Toevoegen</a>

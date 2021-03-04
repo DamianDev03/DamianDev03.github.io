@@ -25,9 +25,16 @@
 	<a href="contact.php">Contact</a>
 </div>
 
-<?php
+<div id="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="kopje">
+        <br><h1>Abonnementen</h1><br><br><br>
+      </div>
+    </div>
+  </div>
 
-
+  <?php
 	$sQuery = "SELECT 	home_abonement.id, 
 						home_abonement.ab_id, 
 						abonementen.ID, 
@@ -54,191 +61,34 @@
 				
 				echo"
         
-        <div class=\"abonement\">
-        <div class=\"abonement-header\">
-            <h2 class=\"abonement-naam\">$name</h2>
-        </div>
-        <hr>
 
-        <div class=\"abonement-content\">
-            <h2>&euro;$prijs</h2>
-            <div class=\"abonement-link\">
-                <a href=\"abonementinfo.php?id=$id\">Info</a>
-            </div>
+    <div class=\"row\">
+    <div class=\"col-sm-3\">
+      <div class=\"abonnement\">
+        <div class=\"abovak\">
+          <div class=\"titel\">
+            <h3>$name</h3>
+          </div>
+          <div class=\"foto\">
+            <img src=\"../images/phones.png\" alt=\"abonnement 1\" width=\"300px\" height=\"300px\">
+          </div>
+          <div class=\"info\">
+            <h4>$desc</h4>
+            <h4>$prijs</h4>
+          </div>
+          <div class=\"knop\">
+            <a href=\"..\"><h4>Meer info</h4></a>
+          </div>
         </div>
+      </div>
     </div>
+    
 				";
 			
 			}
 
 ?>
 
-<div id="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="kopje">
-        <br><h1>Abonnementen</h1><br><br><br>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="abonnement">
-        <div class="abovak">
-          <div class="titel">
-            <h3>Onbeperkt</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 4G</h4>
-            <h4>Prijs: €30,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-      <div class="abovak">
-          <div class="titel">
-            <h3>Start 5GB</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>bel/sms: Onbeperkt</h4>
-            <h4>Prijs: €22,00</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-        <div class="abovak">
-          <div class="titel">
-            <h3>Pro 50GB</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 5G</h4>
-            <h4>Prijs: €27,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-      <div class="abovak">
-          <div class="titel">
-            <h3>Onbeperkt</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 4G</h4>
-            <h4>Prijs: €30,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" id="rij">
-    <div class="col-sm-3">
-      <div class="abonnement">
-        <div class="abovak">
-          <div class="titel">
-            <h3>Onbeperkt</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 4G</h4>
-            <h4>Prijs: €30,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-      <div class="abovak">
-          <div class="titel">
-            <h3>Start 5GB</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>bel/sms: Onbeperkt</h4>
-            <h4>Prijs: €22,00</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-        <div class="abovak">
-          <div class="titel">
-            <h3>Pro 50GB</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 5G</h4>
-            <h4>Prijs: €27,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="abonnement">
-      <div class="abovak">
-          <div class="titel">
-            <h3>Onbeperkt</h3>
-          </div>
-          <div class="foto">
-            <img src="../images/phones.png" alt="abonnement 1" width="300px" height="300px">
-          </div>
-          <div class="info">
-            <h4>Internetsnelheid: 4G</h4>
-            <h4>Prijs: €30,50</h4>
-          </div>
-          <div class="knop">
-            <a href="#"><h4>Meer info</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <br><br>
 <div class="footer">
 <div class="container">
