@@ -23,22 +23,41 @@
 	  <a class="active" href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
+</div>
 
-	  
-	
+<div id="container">
+<div class="row">
+    <div class="col-sm-12">
+      <div class="banner">
+        <img src="../images/Tele2-Logo-500x313.jpg" alt="tele4 logo" width="166px" height="104"><!--250x156 is iets groter-->
+      </div>
+    </div>
   </div>
-	</div>
-
-	<div id="container">
-
-	</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="kopje">
+        <h1><br>Over ons</h1><br>
+      </div>
+      <div class="tekst">
+        <h3>Tele4 verkoopt telefoons en abonnementen als een pakket.
+		<br>Waardoor er in de webshop veel combinaties van pakketen beschikbaar zijn.
+		<br>Deze combinaties en voorwaarden zijn verschillend per toestel en abonnement.
+		<br>
+		<br><br>Als u contact met ons wilt op nemen, bezoek dan even onze <a href="contact.php">contact pagina </a> en vul uw gegevens in.
+		</h3>
+      </div>
+    </div>
+  </div>
+</div>
 	
-	<div class="footer">
+<div class="footer">
+<br><br>
 <div class="container">
   <div class="row">
     <div class="col-lg-5 col-xs-12 about-company">
      
   <div class="social-footer-icons">
+  <h4 class="mt-lg-0 mt-sm-3">Sociaal media</h4>
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
       <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>

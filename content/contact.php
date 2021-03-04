@@ -153,6 +153,7 @@ if($_POST) {
     <div class="col-lg-5 col-xs-12 about-company">
      
   <div class="social-footer-icons">
+  <h4 class="mt-lg-0 mt-sm-3">Sociaal media</h4>
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
       <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>
