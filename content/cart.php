@@ -21,8 +21,11 @@
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
 	  <a class="active" href= "cart.php"><i class="fa fa-shopping-cart"></i></a> 
+		
 </div>
 <div id="cart-content">
+
+
 
 <?php
 	include("db_config.php");
@@ -43,6 +46,7 @@
 					
 					foreach ($cookie_expl as $i) {
 						
+						
 						$sQuery = "SELECT * FROM abonementen WHERE ID = $i;"; 
 					 
 						$oStmt = $db->prepare($sQuery); 
@@ -61,7 +65,9 @@
 								
 								$totaal = $totaal + (float)$prijs;
 								
+								
 								echo"
+								
 								
 									<hr><div class=\"cart-item\">
 										<div class=\"parent\">
@@ -75,7 +81,7 @@
 											</div>
 											<div class=\"div2\">
 												<div class=\"cancel-link-container\">
-													<a class=\"cancel-link\" href=\"cart_remove.php?id=$id\"><i class=\"fas fa-trash-alt\"></i></a>
+												<a class=\"cancel-link\"href=\"cart_remove.php?id=$id\"><i class=\"fas fa-trash-alt\"></i></a>
 												</div>
 											</div>
 										</div>

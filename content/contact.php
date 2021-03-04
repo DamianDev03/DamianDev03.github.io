@@ -44,11 +44,11 @@
     <form action="contact.php" method="post">
   <div class="elem-group">
     <label for="name">Je naam</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+    <input type="text" id="name" name="visitor_name" placeholder="Uw naam..." pattern=[A-Z\sa-z]{3,20} required>
   </div>
   <div class="elem-group">
     <label for="email">Je E-mailadres</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+    <input type="email" id="email" name="visitor_email" placeholder="Uw emailadres..." required>
   </div><br>
   <div class="elem-group">
     <label for="department-selection">Kies Betrokken afdeling</label>
@@ -62,7 +62,7 @@
   <div class="elem-group">
     <label for="title">
     Reden om contact met ons op te nemen</label>
-    <input type="text" id="title" name="email_title" required placeholder="Kan mijn wachtwoord niet opnieuw instellen" pattern=[A-Za-z0-9\s]{8,60}>
+    <input type="text" id="title" name="email_title" required placeholder="Uw reden..." pattern=[A-Za-z0-9\s]{8,60}>
   </div>
   <div class="elem-group">
     <label for="message">Schrijf uw bericht</label>
@@ -114,7 +114,7 @@ if($_POST) {
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
         $email_body .= "<div>
-                           <label><b>Bezoeker Bericht:</b></label>
+                           <label><b>Bericht van bezoeker:</b></label>
                            <div>".$visitor_message."</div>
                         </div>";
     }

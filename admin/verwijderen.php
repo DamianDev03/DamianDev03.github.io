@@ -17,4 +17,3 @@ include("db_config.php");
 
 <h3><a href="list.php">Terug</a></h3>
 
-<?php include("footer.php");?>

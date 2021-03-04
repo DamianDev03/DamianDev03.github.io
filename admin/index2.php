@@ -1,5 +1,10 @@
 <?php include("header.php");?>
 
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+
+
 <h1>Home</h1>
 <br>
 <br>
