@@ -24,7 +24,7 @@
 	  <a href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
-	  <a href= "content/cart.php"><i class="fa fa-shopping-cart"></i></a> 
+	  <a class="active" href= "cart.php"><i class="fa fa-shopping-cart"></i></a> 
 
 	  <?php
 	include("db_config.php");
