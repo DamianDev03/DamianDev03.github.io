@@ -77,7 +77,7 @@
             <h3>$name</h3>
           </div>
           <div class=\"foto\">
-            <img src=\"../images/phones.png\" alt=\"abonnement 1\" width=\"300px\" height=\"300px\">
+            <img src=\"images/phones.png\" alt=\"3 telefoons\" width=\"300px\" height=\"300px\">
           </div>
           <div class=\"info\">
             <h4>$desc</h4>
