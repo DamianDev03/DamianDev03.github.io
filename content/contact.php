@@ -148,6 +148,7 @@ if($_POST) {
 }
 
 ?>
+<br><br><br><br><br><br><br><br>
 <div class="footer">
 <div class="container">
   <div class="row">
