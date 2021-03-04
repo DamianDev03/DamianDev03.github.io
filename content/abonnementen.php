@@ -25,6 +25,53 @@
 	<a href="contact.php">Contact</a>
 </div>
 
+<?php
+
+
+	$sQuery = "SELECT 	home_abonement.id, 
+						home_abonement.ab_id, 
+						abonementen.ID, 
+						abonementen.name, 
+						abonementen.prijs, 
+						abonementen.description
+				
+				FROM home_abonement
+				INNER JOIN abonementen
+				ON home_abonement.ab_id = abonementen.ID;"; 
+		 
+		$oStmt = $db->prepare($sQuery); 
+		$oStmt->execute(); 
+
+		$count = $oStmt->rowCount();
+
+		//resultaat:
+		while($aRow = $oStmt->fetch(PDO::FETCH_ASSOC)) 
+		{
+				$id = 		$aRow["ID"];
+				$name = 	$aRow["name"];
+				$prijs = $aRow["prijs"];
+				$desc = $aRow["description"];
+				
+				echo"
+        
+        <div class=\"abonement\">
+        <div class=\"abonement-header\">
+            <h2 class=\"abonement-naam\">$name</h2>
+        </div>
+        <hr>
+
+        <div class=\"abonement-content\">
+            <h2>&euro;$prijs</h2>
+            <div class=\"abonement-link\">
+                <a href=\"abonementinfo.php?id=$id\">Info</a>
+            </div>
+        </div>
+    </div>
+				";
+			
+			}
+
+?>
 
 <div id="container">
   <div class="row">

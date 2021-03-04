@@ -159,3 +159,64 @@ input[type=text], select, textarea {
 	padding: 20px;
 	
   }
+
+
+  .abonement {
+	border: 2px solid yellow;
+	width: 350px;
+	height: 500px;
+	float: left;
+	margin: 60px;
+	margin-left: 10%;
+	border-radius:50px;
+	background-color:#bbb;
+	padding:0;
+  }
+
+  .abonement-header {
+	  width:100%;
+	  height:100px;
+	  margin-top:0;
+  }
+
+  .abonement-naam {
+	  text-align: center;
+	  margin-top:25%;
+	  font-family: 'Varela Round', sans-serif;
+  }
+
+  .abonement-link {
+	  position: absolute;
+	  bottom: 5px;
+	  width:100%;
+	  height:25px;
+	  margin:20px;
+
+  }
+
+  .abonement-link a {
+	  text-align: center;
+	  width:100px;
+	  background-color:#ffc266;
+	  padding:20px;
+	  padding-left:35%;
+	  padding-right:35%;
+	  font-family: 'Varela Round', sans-serif;
+	  font-size:25px;
+	  border-radius:25px;
+	  border:solid 4px #ff9933;
+	  color:black;
+	  text-decoration:none;
+  }
+
+  .abonement-content {
+	  position: relative;
+	  width:100%;
+	  height:50%;
+  }
+
+  .abonement-content h2 {
+	  text-align:center;
+	  padding:20px;
+	  font-size:45px;
+  }
