@@ -67,8 +67,6 @@
 				$desc = $aRow["description"];
 				
 				echo"
-        
-
     <div class=\"row\">
     <div class=\"col-sm-3\">
       <div class=\"abonnement\">
@@ -89,14 +87,13 @@
         </div>
       </div>
     </div>
-    
 				";
 			
 			}
 
 ?>
 
-<br><br>
+<br><br><br<br><br><br><br><br><br<br><br><br>
 <div class="footer">
 <div class="container">
   <div class="row">
