@@ -26,7 +26,6 @@
   <a href="content/abonnementen.php">Abonnementen</a>
   <a href="content/contact.php">Contact</a>
   <a href= "content/cart.php"><i class="fa fa-shopping-cart"></i></a> 
-
 </div>
 
 <div class="row">
@@ -81,7 +80,7 @@
                   <h3>$name</h3>
                 </div>
                 <div class=\"foto\">
-                  <img src=\"../images/phones.png\" alt=\"3 telefoons\" width=\"300px\" height=\"300px\">
+                  <img src=\"images/phones.png\" alt=\"3 telefoons\" width=\"300px\" height=\"300px\">
                 </div>
                 <div class=\"info\">
                   <h4>$desc</h4>

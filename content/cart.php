@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <div class="topnav">
@@ -19,7 +19,8 @@
 	  <a href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
-	  <a href= "content/cart.php"><i class="fa fa-shopping-cart"></i></a> 
+	  <a class="active" href= "cart.php"><i class="fa fa-shopping-cart"></i></a> 
+</div>
 <div id="cart-content">
 
 <?php
