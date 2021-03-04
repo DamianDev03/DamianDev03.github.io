@@ -146,6 +146,7 @@ if($_POST) {
 } else {
     echo '<br><p>Iets ging mis</p>';
 }
+
 ?>
 <div class="footer">
 <div class="container">
