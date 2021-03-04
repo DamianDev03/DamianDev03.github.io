@@ -24,6 +24,22 @@
   <a href="content/contact.php">Contact</a>
 </div>
 
+<div class="row">
+      <div class="col-sm-12">
+        <div class="banner">
+          <img src="images/Tele2-Logo-500x313.jpg" alt="tele4 logo" width="166px" height="104"><!--250x156 is iets groter-->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="kopje">
+          <br><h1>Aanbiedingen</h1><br><br>
+        </div>
+      </div>
+    </div>
 
 <?php
 
