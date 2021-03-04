@@ -69,6 +69,12 @@
 				$desc = $aRow["description"];
 				
 				echo"
+        <div class=\"abonement\">
+        <div class=\"abonement-header\">
+            <h2 class=\"abonement-naam\">$name</h2>
+        </div>
+        <hr>
+        
 				<div id=\"abboinforechts\">
 					<fieldset>
 						<legend><h1>$name</h1></legend>
@@ -84,7 +90,7 @@
 
 ?>
 
-<br><br>
+<br><br><br<br><br><br><br><br><br<br><br><br>
 <div class="footer">
 <div class="container">
   <div class="row">
