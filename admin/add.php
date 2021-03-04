@@ -59,4 +59,3 @@ catch(PDOException $e)
 
 
 ?>
-<?php include("footer.php");?>

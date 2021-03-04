@@ -47,4 +47,3 @@ $sQuery = "SELECT * from abonementen";
 
 ?>
 
-<?php include("footer.php");?>

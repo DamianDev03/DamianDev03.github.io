@@ -18,4 +18,3 @@
 	</li>
 </ul>
 
-<?php include("footer.php");?>
