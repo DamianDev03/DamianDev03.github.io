@@ -16,7 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body id="abbonomenten">
@@ -26,7 +26,7 @@
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
 	  <a class="active" href= "cart.php"><i class="fa fa-shopping-cart"></i></a> 
-
+</div>
 	  <?php
 	include("db_config.php");
 	$pageid = $_GET['id'];
