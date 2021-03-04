@@ -23,6 +23,7 @@
 	<a href="overons.php">Over ons</a>
 	<a class="active" href="abonnementen.php">Abonnementen</a>
 	<a href="contact.php">Contact</a>
+  <a href="cart.php">Winkelwagen</a> 
 </div>
 
 <div id="container">
@@ -77,7 +78,7 @@
             <h4>$prijs</h4>
           </div>
           <div class=\"knop\">
-            <a href=\"..\"><h4>Meer info</h4></a>
+            <a href=\"abonementinfo.php?id=$id\"><h4>Meer info</h4></a>
           </div>
         </div>
       </div>
@@ -100,7 +101,7 @@
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
       <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>
-      <li><a href="https://www.pinterest.com/"><i>Pintrest</i></a></li>
+      <li><a href="https://www.pinterest.com/"><i>Pinterest</i></a></li>
       <li><a href="https://twitter.com/?lang=en"><i>Twitter</i></a></li>
     </ul>
   </div>

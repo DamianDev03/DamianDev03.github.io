@@ -23,6 +23,7 @@
 	  <a class="active" href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
 	  <a href="contact.php">Contact</a>
+    <a href="cart.php">Winkelwagen</a> 
 </div>
 
 <div id="container">
@@ -61,7 +62,7 @@
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
       <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>
-      <li><a href="https://www.pinterest.com/"><i>Pintrest</i></a></li>
+      <li><a href="https://www.pinterest.com/"><i>Pinterest</i></a></li>
       <li><a href="https://twitter.com/?lang=en"><i>Twitter</i></a></li>
     </ul>
   </div>

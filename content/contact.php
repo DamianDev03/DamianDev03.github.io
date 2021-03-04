@@ -25,7 +25,8 @@
 	  <a href="../index.php">Home</a>
 	  <a href="overons.php">Over ons</a>
 	  <a href="abonnementen.php">Abonnementen</a>
-	  <a class="active" href="contact.php">Contact</a>  
+	  <a class="active" href="contact.php">Contact</a>
+    <a href="cart.php">Winkelwagen</a> 
 
 
 
@@ -157,7 +158,7 @@ if($_POST) {
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
       <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>
-      <li><a href="https://www.pinterest.com/"><i>Pintrest</i></a></li>
+      <li><a href="https://www.pinterest.com/"><i>Pinterest</i></a></li>
       <li><a href="https://twitter.com/?lang=en"><i>Twitter</i></a></li>
     </ul>
   </div>
