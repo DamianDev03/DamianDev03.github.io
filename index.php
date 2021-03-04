@@ -99,6 +99,11 @@
 			}
 
 ?>
+<div class="row">
+  <div class="col-sm-12">
+    <h3>klik <a href="content/abonnementen.php">hier</a> om alle pakketen te zien</h#>
+  </div>
+</div>
 
 <br><br>
 <div class="footer">
