@@ -156,11 +156,10 @@ if($_POST) {
     <div class="col-lg-5 col-xs-12 about-company">
      
   <div class="social-footer-icons">
-  <h4 class="mt-lg-0 mt-sm-3">Sociaal media</h4>
+  <h4 class="mt-lg-0 mt-sm-3">Social media</h4>
     <ul class="menu simple">
       <li><a href="https://www.facebook.com/"><i>Facebook</i></a></li>
-      <li><a href="https://www.instagram.com/?hl=en"><i>Instagram</i></a></li>
-      <li><a href="https://www.pinterest.com/"><i>Pinterest</i></a></li>
+      <li><a href="https://nl.linkedin.com/"><i>LinkedIn</i></a></li>
       <li><a href="https://twitter.com/?lang=en"><i>Twitter</i></a></li>
     </ul>
   </div>
@@ -177,7 +176,8 @@ if($_POST) {
     <div class="col-lg-4 col-xs-12 location">
       <h4 class="mt-lg-0 mt-sm-4">Location</h4>
       <p>Meester F.J. Haarmanweg 56-32, 4538 AS Terneuzen</p>
-      <p class="mb-0"><i class="fa fa-phone"></i>06-32538464</p>
+      <p class="mb-0"><i class="fa fa-phone"></i>0900 – 141414</p>
+      <p class="mb-0"><i class="fa fa-phone"></i>06 14141422</p>
       <p><i class="fa fa-envelope"></i>info-tele4@outlook.com</p>
     </div>
   </div>

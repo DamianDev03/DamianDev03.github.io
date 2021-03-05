@@ -128,8 +128,21 @@ if (!isset($_POST['submit'])) {
 	if (isset($_COOKIE["winkelwagen"])) {
     unset($_COOKIE["winkelwagen"]);
     setcookie("winkelwagen", '', time() - 3600, '/'); // empty value and old timestamp
+
+	$prijs_array = explode(",", $complete_prijs);
+
+    array_shift($prijs_array);
+    $totaal = 0;
+    foreach ($prijs_array as $prijs) {
+
+        $totaal = $totaal + (float)$prijs;
+
+    }
+
+
 	$email_body = "<body>"."Email: ".$email."<br>"."Voornaam: ".$voornaam."<br>"."Achternaam: ".$achternaam."<br>".$complete_naam."<br>".$complete_prijs."</body>";
 	$headers  = 'MIME-Version: 1.0' . "\r\n"
+
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $email . "\r\n";
 	mail("damian@localhost.com", "besteling".$besteling_id, $email_body, $headers);
@@ -139,7 +152,7 @@ if (!isset($_POST['submit'])) {
 				Bedankt voor uw besteling!
 			</h1>
 			<div class=\"abonement-link-info\">
-				<a href=\"index.php\">Terug</a>
+				<a href=\"../index.php\">Terug</a>
 			</div>
 		</div>
 	";

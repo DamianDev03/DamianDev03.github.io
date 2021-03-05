@@ -81,7 +81,7 @@
 											</div>
 											<div class=\"div2\">
 												<div class=\"cancel-link-container\">
-												<a class=\"cancel-link\"href=\"cart_remove.php?id=$id\"><i class=\"fas fa-trash-alt\"></i></a>
+												<a class=\"cancel-link\"href=\"cart_remove.php?id=$id\"><p>Remove</p></a>
 												</div>
 											</div>
 										</div>

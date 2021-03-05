@@ -5,13 +5,7 @@
 	
 	
 ?>
-<body id="abbonomenten">
-<div class="topnav">
-	<a href="../index.php">Home</a>
-	<a href="overons.php">Over ons</a>
-	<a class="active" href="abonnementen.php">Abonnementen</a>
-	<a href="contact.php">Contact</a>
-	<a href= "content/cart.php"><i class="fa fa-shopping-cart"></i></a> 
+
 <?php
 	
 	$cookie_full = $_COOKIE["winkelwagen"];
@@ -89,9 +83,7 @@ $sQuery = "SELECT * FROM abonementen WHERE ID = $pageid;";
 
 
     
-<div id="footer">
-<p>&copy;Tele4.nl</p>
-</div>
+
 
 </body>
 </html>
