@@ -94,5 +94,3 @@ try
 ?>
 
 <a href="list.php">Terug naar het overzichtje</a>
-
-<?php include("footer.php");?>
